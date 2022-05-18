@@ -1,14 +1,15 @@
-def harmonic():
-    print("Enter the value of n")
-    n = int(input())
+def harmonic(n):
+
     number = 1.0
-    number1 = 1
+    total_value = 1
 
     for i in range(n-1):
-        number1 = number1 + (1/(number+1))
+        total_value = total_value + (1 / number + 1)
         number = number + 1
-    print(number1)
+    return total_value
 
 
 if __name__ == "__main__":
-    harmonic()
+    n = int(input("Enter the value of n "))
+    value = harmonic(n)
+    print(value)

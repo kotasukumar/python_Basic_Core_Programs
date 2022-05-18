@@ -1,11 +1,12 @@
-def power_of_2(number):
-    print("Enter the value of N")
-    n = int(input())
+def power_of_2(number,n):
+
     for i in range(n-1):
         number = number * 2
 
-    print(number)
+    return number
 
 
 if __name__ == "__main__":
-    power_of_2(2)
+    n = int(input("Enter the value of N "))
+    total_value = power_of_2(2,n)
+    print(total_value)

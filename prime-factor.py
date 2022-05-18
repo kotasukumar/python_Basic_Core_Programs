@@ -1,20 +1,17 @@
-def prime_factor():
-    print("Enter any number")
-    number = int(input())
+def prime_factor(number):
+    prime_factor = []
 
-    while number%2 == 0:
-        print("2")
-        number = int(number / 2)
-
-    j = 3
-    for i in range(int(number/2)):
-            while number%j == 0:
+    j = 2
+    for i in range(number // 2):
+            while number % j == 0:
                 print(j)
                 number = int(number / j)
+            j += 1
 
     if number > 2:
         print(number)
 
 
 if __name__ == "__main__":
-    prime_factor()
+    number = int(input("Enter any number: "))
+    prime_factor(number)
